@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-main: hsl(217, 54%, 11%);
+  --bg-card: hsl(216, 50%, 16%);
+  --bg-line: hsl(215, 32%, 27%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-cyan: hsl(178, 100%, 50%);
+  --color-softblue: hsl(215, 51%, 70%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background: var(--bg-main);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card {
+  background-color: var(--bg-card);
+  margin: 3rem;
+  border-radius: 20px;
+  max-width: 375px;
+
+  padding: 3rem;
+}
+
+h1 {
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-top: 3rem;
+}
+.description {
+  color: var(--color-softblue);
+  font-size: 1.8rem;
+  font-weight: 100;
+  margin-top: 2rem;
+  line-height: 1.6;
+}
+
+.figures {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.value {
+  color: var(--color-cyan);
+  font-size: 1.8rem;
+}
+.time {
+  color: var(--color-softblue);
+  font-size: 1.8rem;
+}
+
+.cube {
+  margin: auto;
+  border-radius: 10px;
+}
+
+.value,
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.value img {
+  width: 15px;
+}
+
+.time img {
+  width: 25px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--bg-line);
+  margin-top: 2rem;
+}
+
+.creator {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.creator img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.creator p {
+  color: var(--color-softblue);
+  font-size: 1.8rem;
+}
+
+.creator p span {
+  color: white;
+}
